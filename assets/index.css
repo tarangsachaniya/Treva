@@ -1,0 +1,290 @@
+@font-face {
+    font-family: nothing;
+    src: url(../fonts/Nothing_You_Could_Do/NothingYouCouldDo-Regular.ttf);
+}
+
+@font-face {
+    font-family: rubik;
+    src: url(../fonts/Rubik/Rubik-VariableFont_wght.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: rubik;
+}
+
+html,
+body {
+    width: 100%;
+    overflow-x: auto;
+}
+
+.navbar {
+    width: 100%;
+    /* height: 100px; */
+    padding: 2px;
+}
+
+div.section-1 {
+    margin-top: 100px;
+    background-image: url(../Images/banner.png.webp);
+    background-size: cover;
+    padding: 153px 0px;
+    /* height: 100%; */
+    /* height: 683px; */
+    align-items: center;
+    /* justify-content: center; */
+    /* width: 100%; */
+}
+
+.brand_logo {
+    width: 80px;
+    /* padding-right: 0px; */
+}
+.brand_title{
+    padding-right: 50px;
+    font-size: x-large;
+}
+
+.hero {
+    /* display: flex; */
+    font-family: nothing;
+    /* padding-top: 8%; */
+    /* margin-top: 80px; */
+    font-size: 8vw;
+    /* justify-content: center; */
+}
+
+.hero-text {
+    font-size: 25px;
+    max-width: 1500px;
+    width: 100%;
+    text-align: center;
+    margin: auto;
+    /* width: 75%; */
+    /* font-family: rubik; */
+}
+
+.explor {
+    background-color: rgb(2, 216, 163);
+    padding: 20px 40px;
+    margin-top: 20px;
+    transition: background-color 0.5s;
+}
+
+/* .button {
+
+    padding-bottom: 12%;
+} */
+
+.explor:hover {
+    background-color: red;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.badge {
+    background-color: rgb(2, 216, 163);
+    transition: background-color 0.5s;
+    /* font-size: smaller; */
+}
+
+.card-img {
+    object-fit: cover;
+}
+
+.destination-cards {
+    margin-top: 50px;
+}
+p.destination-text{
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+img.destination-image {
+    filter: brightness(70%);
+}
+
+.destination {
+    position: relative;
+    margin:10px 0px;
+    transition: transform 0.5s;
+    /* background-color: #000000; */
+}
+span{
+    transition: color 0.5s;
+}
+
+.destination:hover {
+    transform: translateY(-10px);
+    box-shadow: 5px 5px 6px 2px rgba(74,74,74,0.21);
+    /* background-color: red; */
+}
+
+.destination:hover .badge {
+    background-color: red;
+}
+
+.destination:hover span {
+    color: red;
+}
+
+.subscribe {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url('../Images/newsletter.png.jpg');
+
+    background-size: cover;
+    max-height: 100%;
+    /* height: 240px; */
+    /* width: 100%; */
+    padding: 10px 20px;
+}
+.subscribe-btn{
+    transition: background-color 0.5s;
+}
+
+.subscribe-btn:hover {
+    background-color: rgb(2, 216, 163);
+
+}
+.para-text{
+    max-width: 850px;
+    width: 95%;
+    /* text-align: center; */
+}
+
+.section-4 {
+    background-color: aliceblue;
+}
+.price{
+    transition: background-color 0.5s;
+}
+.places:hover{
+    box-shadow: 5px 5px 6px 2px rgba(74,74,74,0.21);
+}
+.price{
+    transition: background-color 0.5s;
+}
+.places:hover .price {
+    background-color: red;
+}
+.section-4{
+    padding: 100px 0px;
+}
+.section-2{
+    padding: 100px 0px;
+}
+.popular-text{
+    max-width: 600px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.places-card {
+    margin-top: 50px;
+}
+
+.places {
+    margin:10px 0px;
+    transition: box-shadow 0.5s;
+}
+
+.fa-star {
+    color: gold;
+}
+
+.icon-container {
+    margin-top: 50px;
+}
+.moreplaces{
+    transition: background-color 0.5s;
+    padding: 20px 40px;
+    margin-top: 20px;
+}
+.moreplaces:hover {
+    background-color: rgb(2, 216, 163);
+}
+.card-img-overlay{
+    font-size: 20px;
+}
+.section-6 {
+    background-color: rgb(1, 1, 55);
+    /* height: 700px; */
+}
+
+.footer {
+    margin-top: 100px;
+}
+
+.image {
+    height: 80px;
+    width: 80px;
+    margin:15px 0px;
+}
+
+.fa-brands {
+    padding-right: 20px;
+}
+.icon-image{
+    min-height: 103px;
+}
+a{
+    text-decoration: none;
+}
+
+@media (max-width:1024px) {
+    p.destination-text {
+        width: 50%;
+        text-align: center;
+    }
+    .hero-text {
+        font-size: 25px;
+        /* font-family: rubik; */
+    }
+    .popular-text{
+        width: 50%;
+    }
+    .icon-image{
+        min-height: 83px;
+    }
+}
+@media (max-width:727px) {
+    div.section-1{
+        margin-top: 59px;
+    }
+    .navbar-brand {
+        width: 100px;
+    }
+    .card-img-overlay{
+        font-size: 30px;
+    }
+
+    .navbar {
+        width: 100%;
+        /* height: 10% ; */
+    }
+
+    .brand_logo {
+        width: 42%
+    }
+
+    .hero-text {
+        font-size: 20px;
+        text-wrap: wrap;
+        width: 75%;
+        text-align: center;
+    }
+    .para-text{
+        /* max-width: 338px; */
+        width: 75%;
+    }
+    
+    .image{
+        width: 100%;
+        height: 79%;
+    }
+}
